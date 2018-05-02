@@ -115,3 +115,23 @@ def new_plugin(ctx, **defaults):
     from .quickstart import plugin_quickstart
     project = ctx.get_project(silent=True)
     plugin_quickstart(defaults, project=project)
+
+
+@cli.command('new-theme', short_help='Creates a new theme')
+@click.option('--path', type=click.Path(), help='The destination path')
+@click.argument('theme_name', required=False)
+@pass_context
+def new_theme(ctx, **defaults):
+    """This command creates a new theme.
+
+    This will present you with a very short wizard that guides you through
+    creation of a new theme.  At the end of it, it will create a theme
+    in the themes folder of the current project or the path you defined.
+
+    This is the fastest way to creating a new theme.
+    """
+    from .quickstart import theme_quickstart
+    project = ctx.get_project(silent=True)
+    theme_quickstart(defaults, project=project)
+
+
