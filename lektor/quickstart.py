@@ -310,8 +310,6 @@ def theme_quickstart(defaults=None, project=None):
     g.run({
         'theme_name': theme_name,
         'theme_id': theme_id,
-        'theme_class': theme_id.title().replace('-', '') + 'theme',
-        'theme_module': 'lektor_' + theme_id.replace('-', '_'),
         'author_name': author_name,
         'author_email': author_email,
     }, path)
