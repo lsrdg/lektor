@@ -1,12 +1,17 @@
 name = ""
-
 license = ""
+licenselink = ""
 description = ""
 homepage = ""
-tags = []
-features = []
-lektor_required_version = 
+tags = ["", ""]
+features = [""]
+lektor_required_version = 3.1
 
 [author]
     name = ""
     homepage = ""
+
+[original]
+    author = ""
+    homepage = ""
+    repo = ""
